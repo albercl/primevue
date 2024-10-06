@@ -34,8 +34,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - run: npm ci
-      - run: npm build
+      - run: npm i
+      - run: npm build-app
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
